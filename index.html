@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Día de la Amistad ✨</title>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="card-wrapper">
+        <div class="envelope" id="envelope">
+            <h2>Para esa alma única que ilumina todo a su paso</h2>
+            <button class="btn-open" onclick="openLetter()">Abrir carta ✨</button>
+        </div>
+
+        <div class="letter" id="letter">
+            <div id="content-to-export">
+                <h1 id="greeting">¡Feliz Día del Amor y la Amistad! 🥳</h1>
+                <p class="message">
+                    ¡Feliz San Valentín! Que este día te traiga un montón de buenos momentos con amigos, familiares y seres querido ¡Te envío un abrazo virtual y los mejores deseos! 😁🫂. 💙
+                </p>
+                <img src="Bubu.png" alt="Amigos celebrando" class="letter-image" crossorigin="anonymous">
+            </div>
+
+            <div class="controls" id="controls">
+                <input type="text" id="userName" placeholder="Escribe tu nombre...">
+                <button class="btn-action" onclick="personalize()">Personalizar ✨</button>
+                <button class="btn-save" onclick="downloadImage()">📸 Guardar como Imagen (PNG)</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
